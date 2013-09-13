@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Mostly based on a handful of recent blog posts:
 
-Things you may want to cover:
+http://www.emmanueloga.com/2013/07/23/Using-AngularJS-with-a-Rails-backend.html
+http://www.slideshare.net/JamieDavidson2/rails-angular-meetup
+http://coderberry.me/blog/2013/04/22/angularjs-on-rails-4-part-1/
 
-* Ruby version
+In development, start the rails server normally (rails server), and the grunt server: (cd www/ && grunt server). Rails is at port 3000, with grunt server on port 9000 - however, grunt server will proxy calls to /api to the rails app!
 
-* System dependencies
+In production, "grunt build" minifies and grunts the project into /public. The asset pipelines in both projects work exactly like you are currently hoping they might. Live reload works as well as you'd hope. Angular's $resource is included.
 
-* Configuration
+If you have any workflow improvements or suggestions, please let me know! This is an attempt to bring the fantastic grunt/angular frontend workflow and a nice rails API project together into a clean, small, and ready-to-roll repository.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Enjoy!
